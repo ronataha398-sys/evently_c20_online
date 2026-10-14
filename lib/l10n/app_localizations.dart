@@ -254,6 +254,12 @@ abstract class AppLocalizations {
   /// **'Get Start'**
   String get getStart;
 
+  /// No description provided for @welcomeBack.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome Back'**
+  String get welcomeBack;
+
   /// No description provided for @desTitle3.
   ///
   /// In en, this message translates to:
@@ -271,6 +277,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Make every event memorable by sharing the experience with others. Our platform lets you invite friends, keep everyone in the loop, and celebrate moments together. Capture and share the excitement with your network, so you can relive the highlights and cherish the memories.'**
   String get desTitle4;
+
+  /// No description provided for @johnSafwat.
+  ///
+  /// In en, this message translates to:
+  /// **'John Safwat'**
+  String get johnSafwat;
+
+  /// No description provided for @englishCode.
+  ///
+  /// In en, this message translates to:
+  /// **'EN'**
+  String get englishCode;
+
+  /// No description provided for @arabicCode.
+  ///
+  /// In en, this message translates to:
+  /// **'AR'**
+  String get arabicCode;
 }
 
 class _AppLocalizationsDelegate

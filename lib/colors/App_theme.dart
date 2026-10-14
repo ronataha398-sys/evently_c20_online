@@ -3,16 +3,22 @@ import 'package:flutter/material.dart';
 
 class AppTheme {
   static ThemeData lightTheme = ThemeData(
+
     scaffoldBackgroundColor: AppColors.lightBgColor,
     primaryColor: AppColors.lightPrimaryColor,
     dividerColor: AppColors.lightDividerColor,
     primaryColorLight: AppColors.lightPrimaryColor,
+
     colorScheme: ColorScheme.light(
       primary: AppColors.lightPrimaryColor,
       outline: Color(0XFFF0F0F0),
     ),
     cardColor: Colors.white,
-
+    bottomNavigationBarTheme: BottomNavigationBarThemeData(
+      backgroundColor: Colors.transparent,
+      elevation: 0,
+      selectedItemColor: AppColors.lightPrimaryColor,
+    ),
     inputDecorationTheme: InputDecorationThemeData(
       hintStyle: TextStyle(
         fontSize: 14,
@@ -47,6 +53,18 @@ class AppTheme {
     ),
 
     textTheme: TextTheme(
+      //welcome
+        headlineSmall: TextStyle(
+            color:Color(0xff686868),
+            fontWeight: FontWeight.w400,
+            fontSize: 14
+        ) ,
+      //john
+      displaySmall:TextStyle(
+          color:Color(0xff1C1C1C),
+          fontWeight: FontWeight.w500,
+          fontSize: 20
+      ) ,
       titleMedium: TextStyle(
         fontSize: 20,
         fontWeight: FontWeight.w600,
@@ -82,6 +100,11 @@ class AppTheme {
     primaryColorDark: AppColors.darkPrimaryColor,
 
     cardColor: Colors.transparent,
+    bottomNavigationBarTheme: BottomNavigationBarThemeData(
+      backgroundColor: Colors.transparent,
+      elevation: 0,
+      selectedItemColor: AppColors.darkPrimaryColor,
+    ),
     inputDecorationTheme: InputDecorationThemeData(
       hintStyle: TextStyle(
         fontSize: 14,
@@ -116,6 +139,18 @@ class AppTheme {
     ),
 
     textTheme: TextTheme(
+      //welcome
+      bodyMedium: TextStyle(
+          color:Color(0xffD6D6D6),
+          fontWeight: FontWeight.w400,
+          fontSize: 14
+      ) ,
+      //john
+      displaySmall:TextStyle(
+        color:Color(0xffFFFFFF),
+        fontWeight: FontWeight.w500,
+        fontSize: 20
+      ) ,
       titleMedium: TextStyle(
         fontSize: 20,
         fontWeight: FontWeight.w600,
@@ -141,7 +176,11 @@ class AppTheme {
         fontSize: 18,
         fontWeight: FontWeight.w500,
       ),
-    ),
+      bodySmall: TextStyle(
+        color: Colors.white,
+        fontSize: 14
+    )),
+    
     colorScheme: ColorScheme.dark(
       primary: AppColors.darkPrimaryColor,
       outline: Color(0xff002D8F),
